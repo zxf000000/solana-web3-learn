@@ -1,0 +1,6 @@
+/Users/mr.zhou/Desktop/Demos/rust_learn/sol-learn-program/target/rls/debug/deps/ucd_trie-9bbb336630bd37d4.rmeta: /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/ucd-trie-0.1.3/src/lib.rs /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/ucd-trie-0.1.3/src/owned.rs
+
+/Users/mr.zhou/Desktop/Demos/rust_learn/sol-learn-program/target/rls/debug/deps/ucd_trie-9bbb336630bd37d4.d: /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/ucd-trie-0.1.3/src/lib.rs /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/ucd-trie-0.1.3/src/owned.rs
+
+/Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/ucd-trie-0.1.3/src/lib.rs:
+/Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/ucd-trie-0.1.3/src/owned.rs:

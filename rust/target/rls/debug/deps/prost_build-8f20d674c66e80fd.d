@@ -1,0 +1,16 @@
+/Users/mr.zhou/Desktop/Demos/rust_learn/sol-learn-program/target/rls/debug/deps/prost_build-8f20d674c66e80fd.rmeta: /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.9.0/src/lib.rs /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.9.0/src/ast.rs /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.9.0/src/code_generator.rs /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.9.0/src/extern_paths.rs /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.9.0/src/ident.rs /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.9.0/src/message_graph.rs /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.9.0/src/path.rs
+
+/Users/mr.zhou/Desktop/Demos/rust_learn/sol-learn-program/target/rls/debug/deps/libprost_build-8f20d674c66e80fd.rlib: /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.9.0/src/lib.rs /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.9.0/src/ast.rs /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.9.0/src/code_generator.rs /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.9.0/src/extern_paths.rs /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.9.0/src/ident.rs /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.9.0/src/message_graph.rs /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.9.0/src/path.rs
+
+/Users/mr.zhou/Desktop/Demos/rust_learn/sol-learn-program/target/rls/debug/deps/prost_build-8f20d674c66e80fd.d: /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.9.0/src/lib.rs /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.9.0/src/ast.rs /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.9.0/src/code_generator.rs /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.9.0/src/extern_paths.rs /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.9.0/src/ident.rs /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.9.0/src/message_graph.rs /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.9.0/src/path.rs
+
+/Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.9.0/src/lib.rs:
+/Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.9.0/src/ast.rs:
+/Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.9.0/src/code_generator.rs:
+/Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.9.0/src/extern_paths.rs:
+/Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.9.0/src/ident.rs:
+/Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.9.0/src/message_graph.rs:
+/Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.9.0/src/path.rs:
+
+# env-dep:PROTOC=/Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.9.0/third-party/protobuf/protoc-osx-aarch64
+# env-dep:PROTOC_INCLUDE=/Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.9.0/third-party/protobuf/include

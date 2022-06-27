@@ -1,0 +1,16 @@
+/Users/mr.zhou/Desktop/Demos/rust_learn/sol-learn-program/target/rls/debug/deps/prost_build-9f3ca5f9c197e89f.rmeta: /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.10.4/src/lib.rs /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.10.4/src/ast.rs /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.10.4/src/code_generator.rs /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.10.4/src/extern_paths.rs /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.10.4/src/ident.rs /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.10.4/src/message_graph.rs /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.10.4/src/path.rs
+
+/Users/mr.zhou/Desktop/Demos/rust_learn/sol-learn-program/target/rls/debug/deps/libprost_build-9f3ca5f9c197e89f.rlib: /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.10.4/src/lib.rs /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.10.4/src/ast.rs /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.10.4/src/code_generator.rs /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.10.4/src/extern_paths.rs /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.10.4/src/ident.rs /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.10.4/src/message_graph.rs /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.10.4/src/path.rs
+
+/Users/mr.zhou/Desktop/Demos/rust_learn/sol-learn-program/target/rls/debug/deps/prost_build-9f3ca5f9c197e89f.d: /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.10.4/src/lib.rs /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.10.4/src/ast.rs /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.10.4/src/code_generator.rs /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.10.4/src/extern_paths.rs /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.10.4/src/ident.rs /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.10.4/src/message_graph.rs /Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.10.4/src/path.rs
+
+/Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.10.4/src/lib.rs:
+/Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.10.4/src/ast.rs:
+/Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.10.4/src/code_generator.rs:
+/Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.10.4/src/extern_paths.rs:
+/Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.10.4/src/ident.rs:
+/Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.10.4/src/message_graph.rs:
+/Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.10.4/src/path.rs:
+
+# env-dep:PROTOC=/usr/local/bin/protoc
+# env-dep:PROTOC_INCLUDE=/Users/mr.zhou/.cargo/registry/src/github.com-1ecc6299db9ec823/prost-build-0.10.4/third-party/include
