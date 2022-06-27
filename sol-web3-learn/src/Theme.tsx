@@ -5,10 +5,6 @@ import React, { FC, ReactNode } from 'react';
 
 const theme = createTheme({
     palette: {
-        mode: 'dark',
-        primary: {
-            main: deepPurple[700],
-        },
     },
     components: {
         MuiButtonBase: {

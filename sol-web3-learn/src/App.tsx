@@ -13,6 +13,7 @@ import { clusterApiUrl } from '@solana/web3.js';
 import { useSnackbar } from 'notistack';
 import React, { FC, ReactNode, useCallback, useMemo } from 'react';
 import { Theme } from './Theme';
+import MainContainer from "./pages/main-container";
 
 const App: FC = () => {
     return (
@@ -68,7 +69,7 @@ const Context: FC<{ children: ReactNode }> = ({ children }) => {
 };
 
 const Content: FC = () => {
-    return <WalletMultiButton />;
+    return <MainContainer></MainContainer>;
 };
 
 export default App;
