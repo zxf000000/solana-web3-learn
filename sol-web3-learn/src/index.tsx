@@ -7,6 +7,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Wallet from "./pages/Wallet";
 import Home from "./pages/Home";
 import TestPage from "./pages/Test";
+import GenerateToken from "./pages/GenerateToken";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -19,6 +20,7 @@ root.render(
                   <Route index element={<Home></Home>}></Route>
                   <Route path='test' element={<TestPage></TestPage>}></Route>
                   <Route path='wallet' element={<Wallet></Wallet>}>
+                      <Route path='generate-token' element={<GenerateToken></GenerateToken>}></Route>
                   </Route>
               </Route>
           </Routes>

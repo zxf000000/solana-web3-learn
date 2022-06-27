@@ -73,6 +73,11 @@ function MainContainer() {
                                     pl: 4,
                                 }}
                                 primary="Account" to='/wallet'></ListItemLink>
+                            <ListItemLink
+                                sx={{
+                                    pl: 4,
+                                }}
+                                primary="Generate Token" to='/wallet/generate-token'></ListItemLink>
                         </List>
                     </Collapse>
                 </List>
