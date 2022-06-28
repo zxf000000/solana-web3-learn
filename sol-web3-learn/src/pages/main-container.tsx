@@ -1,5 +1,4 @@
 import {FC, ReactNode, useState} from "react";
-import {WalletMultiButton} from "@solana/wallet-adapter-material-ui";
 import './main-container.sass';
 import {
     AppBar,
@@ -16,6 +15,7 @@ import {
 } from "@mui/material";
 import { Outlet } from "react-router-dom";
 import ListItemLink from "../components/ListItemLink";
+import {WalletMultiButton} from "@solana/wallet-adapter-material-ui";
 
 function MainContainer() {
     const drawerWidth = 240;
