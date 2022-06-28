@@ -13,8 +13,11 @@ const Wallet: FC = () => {
     const [loading, setLoading] = useState(false);
     const {enqueueSnackbar} = useSnackbar();
     useEffect( () => {
-        getBalance();
+        if (publicKey) {
+            getBalance();
+        }
     })
+
 
     const getBalance = async () => {
         if (!publicKey) {
@@ -34,7 +37,7 @@ const Wallet: FC = () => {
             setLoading(true);
             const airdropSig = await connection.requestAirdrop(
                 publicKey,
-                LAMPORTS_PER_SOL * 10,
+                LAMPORTS_PER_SOL,
             )
             const lastestBlockhash = await connection.getLatestBlockhash();
             const config = {
@@ -45,7 +48,6 @@ const Wallet: FC = () => {
             const res = await connection.confirmTransaction(config);
             console.log(res);
             setLoading(false);
-            getBalance();
         } catch (e) {
             setLoading(false);
             enqueueSnackbar((e as Error).toString());

@@ -11,16 +11,24 @@ import {
     TOKEN_PROGRAM_ID
 } from "@solana/spl-token";
 import {
-    Keypair,
+    Keypair, LAMPORTS_PER_SOL,
     SystemProgram,
     Transaction
 } from "@solana/web3.js";
+import EventEmitter from "events";
+import GetOrCreateAssociatedTokenAccount from "../components/GetOrCreateAssociatedTokenAccount";
+
+declare global {
+    interface Window {
+        tx: any;
+    }
+}
 
 const GenerateToken: FC = () => {
 
     const {connection} = useConnection();
-    const {publicKey, sendTransaction} = useWallet();
-
+    const {publicKey, sendTransaction, signTransaction} = useWallet();
+    const [token, setToken] = useState('');
     const [generating, setGenerating] = useState(false);
     const {enqueueSnackbar} = useSnackbar();
     const tapGenerate = async () => {
@@ -39,29 +47,39 @@ const GenerateToken: FC = () => {
             fromPubkey: publicKey,
             newAccountPubkey: mintAccount.publicKey,
             space: MINT_SIZE,
-            lamports: rent,
+            lamports: LAMPORTS_PER_SOL,
             programId: TOKEN_PROGRAM_ID,
         };
         let tx = (new Transaction()).add(
             SystemProgram.createAccount(params),
             createInitializeMintInstruction(
                 mintAccount.publicKey,
-                9,
+                8,
                 publicKey,
-                null,
+                publicKey,
                 TOKEN_PROGRAM_ID,
             )
         )
         try {
-            const signature = await sendTransaction(tx, connection);
-            console.log(signature, ' signature');
             const blockHash = await connection.getLatestBlockhash();
-            const res = await connection.confirmTransaction({
-                blockhash: blockHash.blockhash,
-                lastValidBlockHeight: blockHash.lastValidBlockHeight,
-                signature: signature,
-            }, 'processed');
-            console.log(res);
+            tx.recentBlockhash = blockHash.blockhash;
+            tx.feePayer = publicKey;
+            if (signTransaction) {
+                tx.partialSign(mintAccount);
+                // 先签名后发送交易
+                // const signedTx = await signTransaction(tx);
+                // const signature = await connection.sendRawTransaction(signedTx.serialize())
+                // 直接发送交易
+                const signature = await sendTransaction(tx, connection);
+                console.log(signature, ' signature');
+                const res = await connection.confirmTransaction({
+                    blockhash: blockHash.blockhash,
+                    lastValidBlockHeight: blockHash.lastValidBlockHeight,
+                    signature: signature,
+                }, 'processed');
+                console.log(res, ' token');
+            }
+            setToken(mintAccount.publicKey.toString());
             setGenerating(false);
         } catch (e) {
             setGenerating(false);
@@ -92,7 +110,10 @@ const GenerateToken: FC = () => {
                         : null
                 }
             </Box>
-
+            <Typography>
+                Generated Token: {token}
+            </Typography>
+            <GetOrCreateAssociatedTokenAccount></GetOrCreateAssociatedTokenAccount>
         </Box>
     )
 }
