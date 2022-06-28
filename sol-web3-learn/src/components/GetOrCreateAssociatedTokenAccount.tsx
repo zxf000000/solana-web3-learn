@@ -1,5 +1,8 @@
 import React, {FC, useState} from "react";
 import {Box, Button, CircularProgress, TextField, Typography} from "@mui/material";
+import {createAssociatedTokenAccountInstruction, TOKEN_PROGRAM_ID} from "@solana/spl-token";
+import {useConnection, useWallet} from "@solana/wallet-adapter-react";
+import {PublicKey, SystemProgram, Transaction} from "@solana/web3.js";
 
 
 const GetOrCreateAssociatedTokenAccount: FC = () => {
@@ -10,8 +13,23 @@ const GetOrCreateAssociatedTokenAccount: FC = () => {
         setToken(event.target.value);
     }
 
+    const wallet = useWallet();
+    const {connection} = useConnection();
+
     const createAccount = () => {
+        if (!wallet.publicKey) {
+            return;
+        }
         setLoading(true);
+        const instruction = createAssociatedTokenAccountInstruction(
+            wallet.publicKey,
+            new PublicKey(token),
+            SystemProgram.programId,
+            wallet.publicKey,
+            TOKEN_PROGRAM_ID
+        );
+        const tx = new Transaction().add(instruction);
+        wallet.sendTransaction(tx, connection);
     }
 
     return (
